@@ -1,33 +1,33 @@
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 form {
   border: 3px solid #f1f1f1;
   border-radius: 25px;
   width: 90%;
-  margin: auto;
-  position: absolute;
+  position: relative;
   left: 50%;
-  top: 50%;
+  top: 400px;
   transform: translate(-50%, -50%);
   transition: width 1s;
+  margin-bottom: 100px;
 }
 
-input[type="text"],
-input[type="password"] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+label {
+  user-select: none;
 }
-.vertical-center{
+
+h1 {
+  text-align: center;
+}
+
+
+.vertical-center {
   display: flex;
   justify-content: center;
 }
 button {
-  background-color:#00e676;
+  background-color: #00e676;
   border: 0px;
   border-radius: 25px;
   color: white;
@@ -37,27 +37,30 @@ button {
   width: auto;
 }
 
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  background-color: #00e676;
+}
+
+button:focus {
+  background-color: #00e676;
+}
+
 .req {
   font-size: 10px;
   color: #9b0000;
 }
 
-button:hover {
-  opacity: 0.8;
-}
-
 .registerButton {
   float: right;
-  background-color:#c62828;
+  background-color: #c62828;
 }
 
 .container {
   padding: 16px;
-}
-
-span.psw {
-  float: right;
-  padding-top: 16px;
 }
 
 /* Change styles for small screens */
@@ -82,12 +85,13 @@ span.psw {
 
 @media screen and (min-width: 1000px) {
   form {
-    width: 50%;
+    width: 55%;
   }
 }
 
 @media screen and (min-width: 1200px) {
   form {
-    width: 30%;
+    width: 45%;
   }
 }
+
